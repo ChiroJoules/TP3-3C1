@@ -1,0 +1,53 @@
+@font-face { font-family: Designer; src: url('../font/DESIGNER.otf'); } 
+
+
+body{
+    background-color: #090d12;
+}
+
+h1{
+    color: white;
+}
+
+.logoTitre{
+padding-top:1.5rem;
+display: flex;
+justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+
+div.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:4rem;
+    height:8rem;
+    width: 50%;
+   background-color: #c57513;
+   
+}
+h2{
+    text-align:center;
+    font-family:'Designer';
+    color:white;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+img{
+
+width: 165px;
+height: 100px;
+
+}
+
+#rankEquipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e18517;
+}
