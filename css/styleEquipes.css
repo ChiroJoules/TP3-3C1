@@ -1,6 +1,7 @@
 @font-face { font-family: Designer; src: url('../font/DESIGNER.otf'); } 
 
 
+
 body{
     background-color: #090d12;
 }
@@ -24,7 +25,7 @@ div.rectangle {
     justify-content: center;
     align-items: center;
     margin-top:4rem;
-    height:8rem;
+    height:6rem;
     width: 50%;
    background-color: #c57513;
    
@@ -37,17 +38,61 @@ h2{
     font-weight: lighter;
     font-size: 2rem;
 }
-img{
-
-width: 165px;
-height: 100px;
-
+#esl{  
+height: 65%;
 }
 
-#rankEquipe{
+img#esl {
+    margin-left: 2rem;
+}
+
+section#rankEquipe{
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
     align-items: center;
-    background-color: #e18517;
+}
+
+
+@media  screen and (max-width: 600px) {
+
+        
+    img#logo{
+        margin-top: 5%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        }
+
+    img#esl {
+        width: 22%;
+        margin-right: 5px;
+    }
+    
+    div.rectangle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:8rem;
+        width: 75%;
+       background-color: #c57513;
+       
+    }
+
+    #rankEquipe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h2{
+        text-align: center;
+        font-family: 'Designer';
+        color: white;
+        letter-spacing: 0.1rem;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
 }
