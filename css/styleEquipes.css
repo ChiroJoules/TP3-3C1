@@ -30,6 +30,21 @@ div.rectangle {
    background-color: #c57513;
    
 }
+
+div.rectangleE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:4rem;
+    height:6rem;
+    width: 50%;
+   background-color: rgb(180, 127, 29);
+   
+}
+.rectangleE h2{
+    padding-left: 30px;
+}
+
 h2{
     text-align:center;
     font-family:'Designer';
@@ -42,6 +57,12 @@ h2{
 height: 65%;
 }
 
+img#equipe{  
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    }
+
 img#esl {
     margin-left: 2rem;
 }
@@ -53,6 +74,31 @@ section#rankEquipe{
     align-content: center;
     align-items: center;
 }
+
+
+/* animation */
+.hoverNomEquipe {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hoverNomEquipe::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 10px;
+    background-color: #000000;
+    transform-origin: middle ;
+    transition: transform 0.25s ease-in;
+  }
+  
+  .hoverNomEquipe:hover::after {
+    transform: scaleX(1);
+    transform-origin: middle;
+  }
 
 
 @media  screen and (max-width: 600px) {
@@ -78,6 +124,16 @@ section#rankEquipe{
         width: 75%;
        background-color: #c57513;
        
+    }
+
+    div.rectangleE{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:8rem;
+        width: 75%;
+       background-color: #c57513be;
+
     }
 
     #rankEquipe{
