@@ -6,24 +6,48 @@
   <title>TP3-3C1</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styleIndex.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-  <div id="barreNav">
     <header>
-      <nav>
-        <ul>
-          <li class="subNav"></li>
-            <a>Joeurs et Équipes</a>
-            <div class="subCategories">
-              <a href="">Meilleures Joeurs</a>
-              <a href="">Meilleures Équipes</a>
-            </div>
-          <li class="subNav">Match et tournois</li>
-          <li>Statistiques</li>
-          <li class="subNav">Devenir meilleur</li>
-        </ul>
-      </nav>
+      <input type="checkbox" id="cc-nav">
+      <div class="barre-nav">
+        <label for="cc-nav" class="btn-burguer-nav">
+          <span class="material-symbols-outlined" id="icone-burguer">menu</span>
+          <span class="material-symbols-outlined " id="icone-fermer">keyboard_backspace</span>
+        </label>
+        <nav class="nav-principale">
+          <ul>
+            <li>Joeurs/Équipes <span class="material-symbols-outlined" id="fleche">
+              expand_more
+              </span>
+              <ul>
+                <li><a href="pages/equipes.html">Les meilleures équipes</a></li>
+                <li><a href="#">Les meilleures joueurs</a></li>
+              </ul>
+            </li>
+            <li>Matchs et tournois<span class="material-symbols-outlined" id="fleche">
+              expand_more
+              </span>
+              <ul>
+                <li><a href="#">En direct</a></li>
+                <li><a href="#">Résultats</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Statistiques</a></li>
+            <li>Devenir meilleur<span class="material-symbols-outlined" id="fleche">
+              expand_more
+              </span>
+              <ul>
+                <li><a href="#">Tout sur le jeu</a></li>
+                <li><a href="#">Tout sur les pros</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a href="index.html"><img src="medias/logos/liquipedia_logo_v2.png" alt="Liquidpedia" class="liquidpedia" ></a>
+      </div>
     </header>
-  </div>
 </body>
+<script src="js/barre-nav.js"></script>
 </html>

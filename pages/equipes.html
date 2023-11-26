@@ -3,19 +3,51 @@
 <head>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styleEquipes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP</title>
 </head>
 <body>
     <header>
-        <div class="logoTitre">
-            <img id="logo" src="../medias/logos/Counter-Strike_2-logo.png" alt="logoSite">
-        </div>
         <nav class="navbar">
-            <a href="#home" class="active">Accueil</a>
-            <a href="#about">Apropos</a>
-            <a href="#contact">Contact</a>
+            <input type="checkbox" id="cc-nav">
+            <div class="barre-nav">
+                <label for="cc-nav" class="btn-burguer-nav">
+                <span class="material-symbols-outlined" id="icone-burguer">menu</span>
+                <span class="material-symbols-outlined " id="icone-fermer">keyboard_backspace</span>
+              </label>
+              <nav class="nav-principale">
+                <ul>
+                  <li>Joeurs/Équipes <span class="material-symbols-outlined" id="fleche">
+                    expand_more
+                    </span>
+                    <ul>
+                      <li><a href="equipes.html">Les meilleures équipes</a></li>
+                      <li><a href="#">Les meilleures joueurs</a></li>
+                    </ul>
+                  </li>
+                  <li>Matchs et tournois<span class="material-symbols-outlined" id="fleche">
+                    expand_more
+                    </span>
+                    <ul>
+                      <li><a href="#">En direct</a></li>
+                      <li><a href="#">Résultats</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Statistiques</a></li>
+                  <li>Devenir meilleur<span class="material-symbols-outlined" id="fleche">
+                    expand_more
+                    </span>
+                    <ul>
+                      <li><a href="#">Tout sur le jeu</a></li>
+                      <li><a href="#">Tout sur les pros</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <a href="../index.html"><img src="../medias/logos/liquipedia_logo_v2.png" alt="Liquidpedia" class="liquidpedia" ></a>
+            </div>
         </nav>     
     </header>
     <section>
@@ -47,4 +79,5 @@
         
     </footer>
 </body>
+<script src="../js/barre-nav.js"></script>
 </html>
