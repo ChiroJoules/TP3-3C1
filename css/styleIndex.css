@@ -169,17 +169,28 @@ body{
     align-items: center;
   }
 
+  .contentScroll{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+  }
+
+  #flecheAvant, #flecheFront{
+    padding: 1.5%;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
   .imageTitre{
-    width: 60%;
+    width: 75%;
     height: auto;
     margin-top: 15%;
   }
 
   .conteneurMatchs{
     display: flex;
-    width: 100%;
     margin-top: 15%;
-    margin-left: 10%;
+    overflow-x: scroll;
   }
 
   .matchsFutures{
@@ -187,18 +198,29 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45vw;
-    height: auto;
+    border-right: var(--colorBlanc) 0.4rem solid;
+    flex: none;
+    width: 70%;
   }
 
   .matchsFutures > div{
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    justify-content: space-around;
+    margin: 0.2rem;
   }
 
   .matchsFutures > div > img{
     width: 50px;
     height: 50px;
+  }
+
+  .matchsFutures > div > p{
+    font-size: 1.1rem;
+  }
+
+  .matchsFutures > h4{
+    font-weight: normal;
+    font-size: 1.4rem;
   }
 }

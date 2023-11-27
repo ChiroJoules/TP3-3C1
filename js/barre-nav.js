@@ -13,3 +13,20 @@ function arreterleScroll(event){
         leBody.style.overflow = "scroll";
     }
 }
+
+
+let conteneurScroll = document.querySelector(".conteneurMatchs");
+
+let btnAvant = document.getElementById("flecheAvant");
+
+let btnFront = document.getElementById("flecheFront");
+
+btnAvant.addEventListener("click", ()=>{
+    conteneurScroll.style.scrollBehavior = "smooth"
+    conteneurScroll.scrollLeft -= 200;
+})
+
+btnFront.addEventListener("click", ()=>{
+    conteneurScroll.style.scrollBehavior = "smooth"
+    conteneurScroll.scrollLeft += 200;
+})
