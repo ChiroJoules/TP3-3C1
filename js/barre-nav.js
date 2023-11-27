@@ -23,10 +23,10 @@ let btnFront = document.getElementById("flecheFront");
 
 btnAvant.addEventListener("click", ()=>{
     conteneurScroll.style.scrollBehavior = "smooth"
-    conteneurScroll.scrollLeft -= 200;
+    conteneurScroll.scrollLeft -= 223;
 })
 
 btnFront.addEventListener("click", ()=>{
     conteneurScroll.style.scrollBehavior = "smooth"
-    conteneurScroll.scrollLeft += 200;
+    conteneurScroll.scrollLeft += 223;
 })
