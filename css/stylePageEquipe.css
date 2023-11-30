@@ -10,7 +10,8 @@
 }
 
 body{
-    background-color: #090d12;
+    background-color: var(--colorNoir);
+    color: var(--colorBlanc);
 }
 
 h2{
@@ -51,10 +52,6 @@ img#joueurs{
     to {opacity: 1;}
 }
 
-.navbar {
-    animation: fadeIn 1s;
-}
-
 
 /* mobile  */
 
@@ -75,141 +72,4 @@ img#joueurs{
         margin-top: 9rem;
         margin-left: 2rem;
     }  
-    
-    header{
-        background-color: var(--colorBleu);
-        width: 100vw;
-        height: 25%;
-        display: flex;
-        align-items: center;
-      }
-    
-      .btn-burguer-nav{
-        cursor: pointer;
-      }
-    
-      #icone-burguer, #icone-fermer{
-        font-size: 48px;
-        color: var(--colorBlanc);
-        margin-left: 15%;
-      }
-    
-      #icone-fermer{
-        display: none;  
-      }
-    
-      .liquidpedia{
-        width: 17%;
-        height: auto;
-        margin-left: 35%;
-      }
-    
-      .nav-principale{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        top: 0rem;
-        opacity: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transform: translateY(-100%);
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, display 0.5s ease-in-out;
-        z-index: -1;
-        background-color: var(--colorBleu);
-        font-size: 1.3rem;
-        text-align: center;
-      }
-    
-      .nav-principale a {
-        text-decoration: none;
-        color: var(--colorBlanc);
-      }
-    
-      .barre-nav{
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 4rem;
-        display: flex;
-        align-items: center;
-      }
-    
-      nav ul{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-      }
-    
-      nav li{
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-        width: 100vw;
-        padding: 1.5rem;
-        background-color: var(--colorOrange);
-    
-      }
-    
-      #fleche{
-        font-size: 2rem;
-        transform: rotate(90deg);
-        transition: transform 0.2s ease-in-out;
-      }
-    
-      nav li ul li{
-        padding: 1.2rem 0 1.2rem 0;
-        border-bottom: 0.2rem solid var(--colorBlanc);
-      }
-    
-      nav ul ul{
-        display: flex;
-        flex-direction: column;
-        opacity: 0;
-        position: relative;
-        top: 12%;
-        height: 0;
-        background-color: var(--colorOrangeFonce);
-        transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
-      }
-    
-      nav li:hover{
-        background-color: var(--colorOrangeFonce);
-      } 
-    
-      nav li:hover > ul {
-        height: auto;
-        opacity: 1;
-      }
-    
-      nav li:hover > #fleche{
-        transform: rotate(0deg);
-      }
-    
-      nav li > ul > li:hover{
-        background-color: var(--colorOrange);
-      }
-    
-      #cc-nav{
-        display: none;
-      }
-    
-      #cc-nav:checked ~ .barre-nav > .nav-principale {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-    
-      #cc-nav:checked ~ .barre-nav > .btn-burguer-nav > #icone-burguer{
-        display: none;
-      }
-    
-      #cc-nav:checked ~ .barre-nav > .btn-burguer-nav > #icone-fermer{
-        display: block;
-      }
 }
