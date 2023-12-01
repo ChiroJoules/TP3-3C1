@@ -155,13 +155,14 @@
     align-items: center;
     background-color: var(--colorBleu);
     width: 100vw;
-    height: 15vh;
+    margin-top: 10%;
   } 
 
   .liquidpediaFooter{
     width: 25%;
     height: auto;
-    padding-left: 37%;
+    padding-left: 35%;
+    margin: 1rem;
   }
 
   .footerPrincipal > h3{
@@ -173,8 +174,15 @@
     margin: 0.25rem;
   }
 
-  #reseauxSociauxHaut, #reseauxSociauxBas{
-    display: flex;
+  .footerPrincipal > div > img{
+    width: 10vw;
+    height: auto;
+    margin: 5%;
   }
 
+  #reseauxSociauxHaut, #reseauxSociauxBas{
+    display: flex;
+    align-items: center;
+  }
+  
 }

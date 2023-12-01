@@ -69,12 +69,16 @@ body{
     flex: none;
     width: 70%;
   }
-
+  
   .matchsFutures > div{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     margin: 0.2rem;
+  }
+  
+  .matchsFutures > h4{
+    color: var(--colorOrange);
   }
 
   .matchsFutures > div > img{
@@ -89,5 +93,93 @@ body{
   .matchsFutures > h4{
     font-weight: normal;
     font-size: 1.4rem;
+  }
+
+  .tableauTournoi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+  }
+
+  .titreTournoi, .boutonsTournoi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .titreTournoi{
+    margin-top: 10%;
+    background-color: var(--colorOrange);
+  }
+
+  .titreTournoi > h3{
+    padding: 0.5rem;
+  }
+
+  .boutonsTournoi{
+    background-color: var(--colorOrangeFonce);
+  }
+
+  .boutonsTournoi > button{
+    font-family: Designer;
+    font-size: 0.8rem;
+    color: var(--colorBlanc);
+    padding: 0.5rem;
+    border: 0.3rem solid var(--colorBlanc);
+  }
+
+  .boutonsTournoi > button:first-child{
+    background-color: var(--colorOrange);
+  }
+
+  .boutonsTournoi > button:last-child{
+    flex-grow: 0.25;
+    background-color: var(--colorOrangeFonce);
+  }
+
+  .equipesTournoi{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: var(--colorBleu);
+  }
+
+  .phaseGroupes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .round{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+  }
+
+  .match{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .matchSuivant{
+    margin-bottom: 20px;
+  }
+
+  .equipe{
+    background-color: var(--colorOrange);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .equipe > img{
+    width: 40px;
+    height: 40px;
   }
 }
