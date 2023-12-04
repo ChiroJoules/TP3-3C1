@@ -167,14 +167,14 @@ a:hover{
     img#equipe{  
       display: flex;
       justify-content: center;
-      height: 30%;
+      height: 50%;
       text-align: center;
       margin-left: 1rem;
       }
 
     div.rectangleE{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height:8rem;
         width: 75%;
@@ -188,7 +188,6 @@ a:hover{
        justify-content: center;
        align-items: center;
        background-color: var(--colorBleu);
-       margin-right:27%;
 
     }
     div.carre h2{
