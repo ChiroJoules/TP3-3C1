@@ -34,13 +34,7 @@ h2{
     height: 450px;
     margin-top: 1.5rem;
 }
-
-div#joueur{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-left: 6rem;
-}   
+ 
 img#joueurs{
     display: flex;
     justify-content: center;
@@ -57,10 +51,17 @@ img#joueurs{
 
 @media  screen and (max-width: 600px) {
 
+    div#joueur{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    }  
+
     img#joueurs{
         display: flex;
         justify-content: center;
-        margin-left:-6rem ;
+        margin-left:-10rem;
         width: 50%;
     }
     h2{
@@ -72,4 +73,10 @@ img#joueurs{
         margin-top: 9rem;
         margin-left: 2rem;
     }  
+
+    .conteneurInfo{
+        background-color: var(--colorGris);
+        width: 50%;
+        height: 50%;
+    }
 }

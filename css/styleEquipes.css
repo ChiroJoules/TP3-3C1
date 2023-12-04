@@ -161,7 +161,7 @@ a:hover{
         align-items: center;
         height:8rem;
         width: 75%;
-       background-color: #c57513;
+        background-color: #c57513;
        
     }
     img#equipe{  
@@ -181,7 +181,23 @@ a:hover{
        background-color: #c57513be;
 
     }
+    div.carre{
+      display: flex;
+       height:100%;
+       width: 25%;
+       justify-content: center;
+       align-items: center;
+       background-color: var(--colorBleu);
+       margin-right:27%;
 
+    }
+    div.carre h2{
+      margin-right:1.5rem;
+      font-size:3rem;
+
+    }
+
+ 
     #rankEquipe{
         display: flex;
         flex-direction: column;
