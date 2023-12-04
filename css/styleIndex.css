@@ -163,8 +163,8 @@ body{
   .match{
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 20px;
+    align-items: center;
   }
 
   .matchSuivant{
@@ -175,11 +175,28 @@ body{
     background-color: var(--colorOrange);
     padding: 10px;
     border-radius: 5px;
-    margin-top: 5px;
   }
 
   .equipe > img{
     width: 40px;
     height: 40px;
   }
+
+  .divider{
+    display: flex;
+    align-items: center;
+    background-color: var(--colorBlanc);
+    width: 0.5rem;
+    height: 1.5rem;
+  }
+
+  .divider::before{
+    position: absolute;
+    content: "";
+    width: 3.2rem;
+    height: 0.5rem;
+    background-color: var(--colorBlanc);
+  }
+
+
 }
