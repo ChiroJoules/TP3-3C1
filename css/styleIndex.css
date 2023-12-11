@@ -23,8 +23,6 @@ body{
   color: var(--colorBlanc);
   font-family: Designer;
 }
-
-@media screen and (max-width: 600px) {
   
   main{
     display: flex;
@@ -296,4 +294,4 @@ body{
   .article > .texteArticle > p:last-of-type{
     color: var(--colorOrange);
   }
-}
+
