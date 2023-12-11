@@ -90,7 +90,6 @@
     width: 100vw;
     padding: 1.5rem;
     background-color: var(--colorOrange);
-  
   }
   
   #fleche{
@@ -185,4 +184,56 @@
     align-items: center;
   }
   
+}
+
+@media screen and (min-width: 601px){
+
+  .barre-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 18vw;
+    z-index: 1;
+    background-color: var(--colorBleu);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barre-nav  img{
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-principale{
+    display: flex;
+    margin-top: 55%;
+    font-size: 1.5rem;
+  }
+
+  .nav-principale a {
+    text-decoration: none;
+    color: var(--colorBlanc);
+  }
+
+  .nav-principale ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-principale ul li{
+    padding: 10%;
+  }
+
+  .nav-principale ul li ul{
+    display: none;
+  }
+
+
+  #icone-burguer, #icone-fermer, #cc-nav, #fleche{
+    display: none;
+  }
 }
