@@ -32,6 +32,11 @@ body{
     align-items: center;
   }
 
+  main > section{
+    width: 85vw;
+    margin-top: 20%;
+  }
+
   .contentScroll{
     display: flex;
     align-items: center;
@@ -99,7 +104,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85vw;
   }
 
   .titreTournoi, .boutonsTournoi{
@@ -198,11 +202,6 @@ body{
     background-color: var(--colorBlanc);
   }
 
-  .matchRegionaux{
-    width: 85vw;
-    margin-top: 10%;
-  }
-
   .titreMatch{
     background-color: var(--colorOrange);
     display: flex;
@@ -214,14 +213,26 @@ body{
   .boutonsMatch{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: var(--colorOrangeFonce);
     width: 96%;
     padding: 2%;
   }
 
   .boutonsMatch > button{
+    font-family: Designer;
+    font-size: 0.8rem;
     padding: 1.5%;
+    width: 45%;
     flex-grow: 1;
+    background-color: var(--colorOrangeFonce);
+    border: 0.3rem solid var(--colorBlanc);
+    color: var(--colorBlanc);
+    
+  }
+
+  .boutonsMatch > button:last-of-type{
+    background-color: var(--colorOrange);
   }
 
   .matchsGeneral{
@@ -231,13 +242,13 @@ body{
     width: 100%;
   }
 
-  .titreAvenir{
+  .titresInterieurs{
     background-color: var(--colorOrange);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto;
+    margin: 0.2rem auto;
     height: 2.5rem;
   }
 
@@ -253,6 +264,36 @@ body{
     text-overflow: ellipsis;
     font-size: 0.9rem;
     width: 40%;
+    margin: 0.3rem 0;
   }
 
+  .nouvelles{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titreNouvelles{
+    background-color: var(--colorOrange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .article{
+    width: 100%;
+    background-color: var(--colorBleu);
+    display: flex;
+    border-bottom: var(--colorOrange) 0.4rem solid;
+  }
+
+  .article > img{
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .article > .texteArticle > p:last-of-type{
+    color: var(--colorOrange);
+  }
 }
