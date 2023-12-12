@@ -1,0 +1,72 @@
+@media screen and (min-width: 1024px){
+    main{
+        margin-left: 17vw;
+    }
+
+    .imageTitre{
+        width: 50%;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .contentScroll{
+        width: 70vw;
+    }
+
+    #flecheAvant, #flecheFront{
+        padding: 0.5%;
+        font-size: 3.5rem;
+    }
+
+
+    .matchsFutures{
+        width: 24.5%;
+    }
+
+    .round{
+        margin: 1%;
+    }
+
+    .equipe{
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        width: 12vw;
+        justify-content: space-evenly;
+    }
+
+    .equipe > p{
+        display: block;
+    }
+
+    .equipe > img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .divider::before{
+        width: 7rem;
+    }
+
+    .matchSuivant > .equipe{
+        height: 2rem;
+    }
+
+    .divMatchsNouvelles{
+        width: 70vw;
+        margin-top: 10%;
+        flex-direction: row;
+        align-items: normal;
+    }
+    
+    .divMatchsNouvelles > section{
+        width: 35vw;
+        font-size: 1rem;
+        margin: 2%;
+    }
+
+    main > section{
+        width: 65vw;
+        margin-top: 10%;
+    }
+
+}

@@ -38,6 +38,7 @@ body{
   .contentScroll{
     display: flex;
     align-items: center;
+    margin-top: 10%;
     width: 100vw;
   }
 
@@ -55,7 +56,6 @@ body{
 
   .conteneurMatchs{
     display: flex;
-    margin-top: 15%;
     overflow-x: scroll;
   }
 
@@ -109,6 +109,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 2%;
   }
 
   .titreTournoi{
@@ -146,6 +147,7 @@ body{
     flex-direction: column;
     padding: 2%;
     background-color: var(--colorBleu);
+    width: 100%;
   }
 
   .phaseGroupes{
@@ -177,6 +179,13 @@ body{
     background-color: var(--colorOrange);
     padding: 10px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .equipe > p{
+    display: none;
   }
 
   .equipe > img{
@@ -198,6 +207,18 @@ body{
     width: 3.2rem;
     height: 0.5rem;
     background-color: var(--colorBlanc);
+  }
+
+  .divMatchsNouvelles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw;
+    margin-top: 20%;
+  }
+
+  .divMatchsNouvelles > section{
+    font-size: 1.3rem;
   }
 
   .titreMatch{
@@ -268,6 +289,7 @@ body{
   .nouvelles{
     display: flex;
     flex-direction: column;
+    margin-top: 15%;
   }
 
   .titreNouvelles{
