@@ -248,7 +248,7 @@
   nav li{
     background-color: transparent;
     width: 100%;
-    padding: 1.5rem;
+    padding: 0.5rem;
     margin: 5% 0%;
     flex-wrap: nowrap;
   }
@@ -269,10 +269,9 @@
   }
 
   .footerPrincipal{
-    width: 81vw;
+    width: 81.5vw;
     margin-left: 18.8vw;
     flex-direction: row;
-    font-size: 1.3rem;
   }
 
   .liquidpediaFooter{
@@ -291,12 +290,14 @@
   .iconesFooter{
     align-items: flex-start;
     width: 50%;
+    margin: 2%;
   }
 
   .texteFooter{
     align-items: flex-end;
-    margin: 1%;
+    margin: 2%;
     width: 50%;
+    font-size: 1.3rem;
   }
 
 }

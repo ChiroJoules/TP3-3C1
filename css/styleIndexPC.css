@@ -44,7 +44,7 @@
     }
 
     .divider::before{
-        width: 7rem;
+        width: 15rem;
     }
 
     .matchSuivant > .equipe{
@@ -60,13 +60,12 @@
     
     .divMatchsNouvelles > section{
         width: 35vw;
-        font-size: 1rem;
         margin: 2%;
     }
 
     main > section{
         width: 65vw;
-        margin-top: 10%;
+        margin-top: 0%;
     }
 
 }

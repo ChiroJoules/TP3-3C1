@@ -127,6 +127,7 @@ body{
 
   .boutonsTournoi > button{
     font-family: Designer;
+    width: 45%;
     font-size: 0.8rem;
     color: var(--colorBlanc);
     padding: 0.5rem;
@@ -148,6 +149,7 @@ body{
     padding: 2%;
     background-color: var(--colorBleu);
     width: 100%;
+    z-index: -2;
   }
 
   .phaseGroupes{
@@ -178,7 +180,7 @@ body{
   .equipe{
     background-color: var(--colorOrange);
     padding: 10px;
-    border-radius: 5px;
+    border: 0.3rem solid var(--colorBlanc);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,9 +206,10 @@ body{
   .divider::before{
     position: absolute;
     content: "";
-    width: 3.2rem;
+    width: 7rem;
     height: 0.5rem;
     background-color: var(--colorBlanc);
+    z-index: -1;
   }
 
   .divMatchsNouvelles{
@@ -218,7 +221,7 @@ body{
   }
 
   .divMatchsNouvelles > section{
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .titreMatch{
@@ -240,7 +243,7 @@ body{
 
   .boutonsMatch > button{
     font-family: Designer;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 1.5%;
     width: 45%;
     flex-grow: 1;
@@ -281,9 +284,8 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.9rem;
     width: 40%;
-    margin: 0.3rem 0;
+    margin: 0.5rem 0;
   }
 
   .nouvelles{
@@ -304,11 +306,12 @@ body{
     width: 100%;
     background-color: var(--colorBleu);
     display: flex;
+    align-items: center;
     border-bottom: var(--colorOrange) 0.4rem solid;
   }
 
   .article > img{
-    width: 50%;
+    width: 45%;
     height: auto;
     padding: 1rem;
   }
