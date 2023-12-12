@@ -71,11 +71,13 @@ body{
     border-right: var(--colorBlanc) 0.4rem solid;
     flex: none;
     width: 70%;
+    font-size: 1.1rem;
   }
   
   .matchsFutures > div{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     margin: 0.2rem;
   }
@@ -85,17 +87,13 @@ body{
   }
 
   .matchsFutures > div > img{
-    width: 50px;
-    height: 50px;
-  }
-
-  .matchsFutures > div > p{
-    font-size: 1.1rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .matchsFutures > h4{
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .tableauTournoi{
@@ -128,7 +126,7 @@ body{
   .boutonsTournoi > button{
     font-family: Designer;
     width: 45%;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: var(--colorBlanc);
     padding: 0.5rem;
     border: 0.3rem solid var(--colorBlanc);
@@ -191,8 +189,8 @@ body{
   }
 
   .equipe > img{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .divider{
@@ -206,7 +204,7 @@ body{
   .divider::before{
     position: absolute;
     content: "";
-    width: 7rem;
+    width: 6rem;
     height: 0.5rem;
     background-color: var(--colorBlanc);
     z-index: -1;

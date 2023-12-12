@@ -37,9 +37,9 @@
   }
   
   .liquidpedia{
-    width: 17%;
+    width: 20%;
     height: auto;
-    margin-left: 35%;
+    margin-left: 30%;
   }
   
   .nav-principale{
@@ -249,7 +249,6 @@
     background-color: transparent;
     width: 100%;
     padding: 0.5rem;
-    margin: 5% 0%;
     flex-wrap: nowrap;
   }
 
@@ -263,6 +262,9 @@
     margin: 0;
   }
 
+  nav li:hover > #fleche{
+    transform: rotate(-90deg);
+  }
 
   #icone-burguer, #icone-fermer, #cc-nav{
     display: none;
