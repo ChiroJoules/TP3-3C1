@@ -23,46 +23,148 @@ h2{
     margin-left: 2rem;
 
 }
+h3{
+    font-family: 'Designer';
+    color: white;
+    letter-spacing: 0.2rem;
+    font-weight:normal;
+    margin-left: 1.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+} 
+.tableau3 h4 {
+    font-family: 'Designer';
+    color:var(--colorNoir);
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-left: 5px;
+    text-align: center;
+}
+h5 {
+    font-family: 'Designer';
+    color:var(--colorBlanc);
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-left: 5px;
+    text-align:start;
+}
+
+p#nomJ{
+    font-family: 'Designer';
+    color: white;
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-align: center;
+}
 .infoMatch{
     display: flex;
     justify-content: center;
 }
-
-.tableauMatch{
-    background-color: #c57513;
-    width: 50%;
-    height: 450px;
-    margin-top: 1.5rem;
-}
- 
-img#joueurs{
+.infoJoueur{
     display: flex;
     justify-content: center;
-    margin-left:-6rem ;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+img#equipe{  
+    display: flex;
+    justify-content: center;
+    height:83%;
+    }
+
+.infoEquipe{
+    display: flex;
+    justify-content: center;
+}
+.tableauMatch{
+    background-color: var(--colorOrange);
+    width: 75%;
+    height: 450px;
+    margin-top: 1rem;
+}
+.conteneurJoueur{
+    margin-top: 2rem;
+    }
+.tableauJoueur{
+    background-color: var(--colorBleu);
+    width: 75%;
+    height: 250px;
+    margin-top: -2rem;
+}
+.tableau2{
+    background-color:var(--colorBleu);
+    width: 100%;
+    height: 15%;
 }
 
+.tableau3{
+    background-color:var(--colorOrange);
+    width: 100%;
+    height: 15%;
+}
+.tableau3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* mobile  */
+img#j1{
+    display: flex;
+    justify-content: center;
+    margin-left:3rem;
+    width: 25%;
+}
+.tableau2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.tableauEquipe{
+    display: flex;
+    background-color: var(--colorNoir);
+    justify-content: space-evenly;
+    width: 90%;
+    height:45%;
+    margin-top:-2.5rem;
+}
 
-@media  screen and (max-width: 600px) {
+div.Matchs{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    height:16%;
+    border-bottom: solid 5px var(--colorBleu);
+}
+div.Matchs h4 {
+    font-family: 'Designer';
+    color:var(--colorNoir);
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-align: center;
+}
+section.grpJoueur{
+   padding-left: 5px;
+  
+}
+ 
 
-    div#joueur{
+div#joueur{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    margin-left: 10rem;
+    margin-left:2.5rem;
     }  
 
     img#joueurs{
         display: flex;
         justify-content: center;
-        margin-left:-10rem;
-        width: 50%;
+        margin-left:-2.8rem;
+        width: 25%;
     }
     h2{
         font-family: 'Designer';
@@ -79,4 +181,16 @@ img#joueurs{
         width: 50%;
         height: 50%;
     }
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* mobile  */
+
+@media  screen and (max-width: 600px) {
+
+   
 }
