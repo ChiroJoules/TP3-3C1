@@ -9,6 +9,10 @@
   --colorOrangeFonce: #af5f00
 }
 
+  html{
+    overflow-x: hidden;
+  }
+
   header{
     background-color: var(--colorBleu);
     width: 100vw;
@@ -33,9 +37,9 @@
   }
   
   .liquidpedia{
-    width: 17%;
+    width: 20%;
     height: auto;
-    margin-left: 35%;
+    margin-left: 30%;
   }
   
   .nav-principale{
@@ -155,6 +159,12 @@
     margin-top: 10%;
   } 
 
+  .iconesFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .liquidpediaFooter{
     width: 25%;
     height: auto;
@@ -162,16 +172,22 @@
     margin: 1rem;
   }
 
-  .footerPrincipal > h3{
+  .footerPrincipal > .texteFooter > h3{
     color: var(--colorOrange);
     margin: 0.25rem;
   }
 
-  .footerPrincipal > p{
+  .footerPrincipal > .texteFooter > p{
     margin: 0.25rem;
   }
 
-  .footerPrincipal > div > img{
+  .texteFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerPrincipal > .iconesFooter > div > img{
     width: 10vw;
     height: auto;
     margin: 5%;
@@ -233,7 +249,6 @@
     background-color: transparent;
     width: 100%;
     padding: 0.5rem;
-    margin: 5% 0%;
     flex-wrap: nowrap;
   }
 
@@ -247,8 +262,44 @@
     margin: 0;
   }
 
+  nav li:hover > #fleche{
+    transform: rotate(-90deg);
+  }
 
   #icone-burguer, #icone-fermer, #cc-nav{
     display: none;
   }
+
+  .footerPrincipal{
+    width: 81.5vw;
+    margin-left: 18.8vw;
+    flex-direction: row;
+  }
+
+  .liquidpediaFooter{
+    width: 25%;
+    height: auto;
+    padding-left: 0%;
+    margin: 1rem;
+  }
+
+  .footerPrincipal > .iconesFooter > div > img{
+    width: 4vw;
+    height: auto;
+    margin: 5%;
+  }
+
+  .iconesFooter{
+    align-items: flex-start;
+    width: 50%;
+    margin: 2%;
+  }
+
+  .texteFooter{
+    align-items: flex-end;
+    margin: 2%;
+    width: 50%;
+    font-size: 1.3rem;
+  }
+
 }

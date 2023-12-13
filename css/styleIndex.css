@@ -38,6 +38,7 @@ body{
   .contentScroll{
     display: flex;
     align-items: center;
+    margin-top: 10%;
     width: 100vw;
   }
 
@@ -55,7 +56,6 @@ body{
 
   .conteneurMatchs{
     display: flex;
-    margin-top: 15%;
     overflow-x: scroll;
   }
 
@@ -71,11 +71,13 @@ body{
     border-right: var(--colorBlanc) 0.4rem solid;
     flex: none;
     width: 70%;
+    font-size: 1.1rem;
   }
   
   .matchsFutures > div{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     margin: 0.2rem;
   }
@@ -85,17 +87,13 @@ body{
   }
 
   .matchsFutures > div > img{
-    width: 50px;
-    height: 50px;
-  }
-
-  .matchsFutures > div > p{
-    font-size: 1.1rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .matchsFutures > h4{
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .tableauTournoi{
@@ -109,6 +107,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 2%;
   }
 
   .titreTournoi{
@@ -126,7 +125,8 @@ body{
 
   .boutonsTournoi > button{
     font-family: Designer;
-    font-size: 0.8rem;
+    width: 45%;
+    font-size: 1.2rem;
     color: var(--colorBlanc);
     padding: 0.5rem;
     border: 0.3rem solid var(--colorBlanc);
@@ -146,6 +146,8 @@ body{
     flex-direction: column;
     padding: 2%;
     background-color: var(--colorBleu);
+    width: 100%;
+    z-index: -2;
   }
 
   .phaseGroupes{
@@ -176,12 +178,19 @@ body{
   .equipe{
     background-color: var(--colorOrange);
     padding: 10px;
-    border-radius: 5px;
+    border: 0.3rem solid var(--colorBlanc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .equipe > p{
+    display: none;
   }
 
   .equipe > img{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .divider{
@@ -195,9 +204,22 @@ body{
   .divider::before{
     position: absolute;
     content: "";
-    width: 3.2rem;
+    width: 6rem;
     height: 0.5rem;
     background-color: var(--colorBlanc);
+    z-index: -1;
+  }
+
+  .divMatchsNouvelles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw;
+    margin-top: 20%;
+  }
+
+  .divMatchsNouvelles > section{
+    font-size: 1rem;
   }
 
   .titreMatch{
@@ -219,7 +241,7 @@ body{
 
   .boutonsMatch > button{
     font-family: Designer;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 1.5%;
     width: 45%;
     flex-grow: 1;
@@ -260,14 +282,14 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.9rem;
     width: 40%;
-    margin: 0.3rem 0;
+    margin: 0.5rem 0;
   }
 
   .nouvelles{
     display: flex;
     flex-direction: column;
+    margin-top: 15%;
   }
 
   .titreNouvelles{
@@ -282,11 +304,12 @@ body{
     width: 100%;
     background-color: var(--colorBleu);
     display: flex;
+    align-items: center;
     border-bottom: var(--colorOrange) 0.4rem solid;
   }
 
   .article > img{
-    width: 50%;
+    width: 45%;
     height: auto;
     padding: 1rem;
   }

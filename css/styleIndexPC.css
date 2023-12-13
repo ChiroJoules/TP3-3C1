@@ -1,0 +1,88 @@
+@media screen and (min-width: 1024px){
+    main{
+        margin-left: 17vw;
+    }
+
+    .imageTitre{
+        width: 40%;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .contentScroll{
+        width: 70vw;
+    }
+
+    #flecheAvant, #flecheFront{
+        padding: 0.5%;
+        font-size: 3.5rem;
+    }
+
+    .matchsFutures > div > img{
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    
+      .matchsFutures > div > p{
+        font-size: 1.3rem;
+      }
+    
+      .matchsFutures > h4{
+        font-weight: normal;
+        font-size: 1.5rem;
+      }
+
+    .matchsFutures{
+        width: 35%;
+    }
+
+    .round{
+        margin: 1%;
+    }
+
+    .equipe{
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        width: 12vw;
+        justify-content: space-evenly;
+    }
+
+    .equipe > p{
+        display: block;
+    }
+
+    .equipe > img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .divider::before{
+        width: 14rem;
+    }
+
+    .matchSuivant > .equipe{
+        height: 2rem;
+    }
+
+    .divMatchsNouvelles{
+        width: 70vw;
+        margin-top: 10%;
+        flex-direction: row;
+        align-items: normal;
+    }
+    
+    .divMatchsNouvelles > section{
+        width: 35vw;
+        margin: 2%;
+    }
+
+    .titreNouvelles h3:first-of-type, .titreMatch h3:first-of-type, .titreTournoi h3:first-of-type{
+        font-size: 2rem;
+    }
+
+    main > section{
+        width: 65vw;
+        margin-top: 0%;
+    }
+
+}
