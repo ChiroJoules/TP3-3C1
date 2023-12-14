@@ -1,5 +1,5 @@
 @font-face { font-family: Designer; src: url('../font/DESIGNER.otf'); } 
-
+/* CSS MICHAEL ALI SOEU */
 :root{
     --colorOrange: #E18517;
     --colorBlanc: #e5e5e7;
@@ -26,12 +26,42 @@
 
   section{
     margin-left: 5rem;
-  }
+}
+
+  section#logoHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -0.8rem;
+
+}
+  section#rankEquipe{
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 h1{
     color: white;
 }
 
+h3{
+  font-family:'Designer';
+}
 
+p{
+  font-family:'Designer';
+}
+h2{
+    text-align:center;
+    font-family:'Designer';
+    color:white;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    font-size: 2rem;
+}
 #cs2Logo{
   
   display: flex;
@@ -52,14 +82,6 @@ div.rectangle {
     width: 50%;
    background-color: #c57513;
    
-}
-
-section#logoHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -0.8rem;
-
 }
 div.rectangleE {
     display: flex;
@@ -87,25 +109,14 @@ div.carre h2{
   font-size:3rem;
   padding-left: 30px;
 }
+
+
+
 .rectangleE h2{
     padding-left: 1rem;
 }
 
-h3{
-  font-family:'Designer';
-}
 
-p{
-  font-family:'Designer';
-}
-h2{
-    text-align:center;
-    font-family:'Designer';
-    color:white;
-    letter-spacing: 0.1rem;
-    font-weight: lighter;
-    font-size: 2rem;
-}
 #esl{  
 height: 65%;
 }
@@ -122,13 +133,7 @@ img#esl {
     margin-left: 2rem;
 }
 
-section#rankEquipe{
 
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
 
 a{
   text-decoration: none;
@@ -169,12 +174,7 @@ a:hover{
   section{
     margin-left: -1rem;
   }
-      div.rectangle h2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-    }
+   
         
     img#logo{
         margin-top: 5%;
@@ -187,6 +187,20 @@ a:hover{
         width: 22%;
         margin-right: 5px;
     }
+
+    img#equipe{  
+      display: flex;
+      justify-content: center;
+      height: 50%;
+      text-align: center;
+      margin-left: 1rem;
+      } 
+      
+    img#imageLogo{
+      width: 50%;
+      display: flex;
+      margin-top: 2rem;
+    }
     
     div.rectangle {
         display: flex;
@@ -196,15 +210,13 @@ a:hover{
         width: 75%;
         background-color:var(--colorOrange);
        
-    }
-    img#equipe{  
-      display: flex;
-      justify-content: center;
-      height: 50%;
-      text-align: center;
-      margin-left: 1rem;
-      }
-
+    } 
+    div.rectangle h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    } 
     div.rectangleE{
         display: flex;
         justify-content: flex-start;
@@ -229,7 +241,6 @@ a:hover{
 
     }
 
- 
     #rankEquipe{
         display: flex;
         flex-direction: column;
@@ -246,9 +257,5 @@ a:hover{
         font-size: 1.5rem;
     }
 
-    img#imageLogo{
-        width: 50%;
-        display: flex;
-        margin-top: 2rem;
-    }
+  
 }
