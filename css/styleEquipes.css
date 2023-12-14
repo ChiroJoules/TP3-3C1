@@ -23,17 +23,23 @@
     color: var(--colorBlanc);
   }
 
+
+  section{
+    margin-left: 5rem;
+  }
 h1{
     color: white;
 }
 
 
 #cs2Logo{
+  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 img#imageLogo{
+  margin-top: 2rem;
   width: 25%;
 }
 
@@ -57,18 +63,41 @@ section#logoHeader{
 }
 div.rectangleE {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top:4rem;
     height:6rem;
-    width: 50%;
+    width: 48%;
    background-color: rgb(180, 127, 29);
    
 }
+
+div.carre{
+  display: flex;
+   height:100%;
+   width: 20%;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--colorBleu);
+
+}
+div.carre h2{
+  
+  margin-right:1.5rem;
+  font-size:3rem;
+  padding-left: 30px;
+}
 .rectangleE h2{
-    padding-left: 30px;
+    padding-left: 1rem;
 }
 
+h3{
+  font-family:'Designer';
+}
+
+p{
+  font-family:'Designer';
+}
 h2{
     text-align:center;
     font-family:'Designer';
@@ -86,6 +115,7 @@ img#equipe{
     justify-content: center;
     align-items: center;
     height: 75%;
+    margin-left: 4rem;
     }
 
 img#esl {
@@ -136,6 +166,9 @@ a:hover{
 
 @media  screen and (max-width: 600px) {
     
+  section{
+    margin-left: -1rem;
+  }
       div.rectangle h2{
         display: flex;
         justify-content: center;
@@ -161,7 +194,7 @@ a:hover{
         align-items: center;
         height:8rem;
         width: 75%;
-        background-color: #c57513;
+        background-color:var(--colorOrange);
        
     }
     img#equipe{  

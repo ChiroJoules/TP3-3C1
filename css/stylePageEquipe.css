@@ -49,8 +49,11 @@ h5 {
     font-size: 1rem;
     margin-left: 5px;
     text-align:start;
+} 
+   
+p{
+    font-family: 'Designer';
 }
-
 
 
 .infoMatch{
@@ -182,9 +185,26 @@ div#joueur{
 }
 
 
-/* mobile  */
+/*  */
 
-@media  screen and (max-width: 600px) {
+@media  screen and (min-width: 1024px) {
 
+   
+
+    img#joueurs{
+        display: flex;
+        justify-content: center;
+        margin-left:-3.5rem;
+        width: 20%;
+    }
+    
+    img#j1{
+
+        margin-left:7rem;
+    }
+
+   section{
+    margin-left: 22rem;
+   }
    
 }
