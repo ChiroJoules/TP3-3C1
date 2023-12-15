@@ -1,3 +1,8 @@
+/*TOUTES LES STYLES DU PC POUR LA PAGE INDEX*/
+/*Pour etre sincere dans ce code il y a juste de modification dans le font size,
+le margin, le width, quelques changements des characteristiques flex 
+et le padding. Le reste est le meme que le code pour la version en mobile*/
+
 @media screen and (min-width: 1024px){
     main{
         margin-left: 17vw;

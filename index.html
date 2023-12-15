@@ -4,44 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TP3-3C1</title>
+  <!-- Normalize pour la page -->
   <link rel="stylesheet" href="css/normalize.css">
+  <!-- Feuille de style pour la barre de navigation -->
   <link rel="stylesheet" href="css/styleNAV-Footer.css">
+  <!-- Feuille de style pour la page -->
   <link rel="stylesheet" href="css/styleIndex.css">
   <link rel="stylesheet" href="css/styleIndexPC.css">
+  <!-- Feuille de style pour les icones google -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
+      <!-- checkbox pour le menu mobile -->
       <input type="checkbox" id="cc-nav">
+      <!-- barre de navigation -->
       <div class="barre-nav">
-        <label for="cc-nav" class="btn-burguer-nav">
+        <label for="cc-nav" class="btn-burguer-nav"> 
+          <!-- Icones qui changeront dependent de l'etat du menu -->
           <span class="material-symbols-outlined" id="icone-burguer">menu</span>
           <span class="material-symbols-outlined " id="icone-fermer">keyboard_backspace</span>
         </label>
+        <!-- logo Liquidpedia -->
         <a href="index.html"><img src="medias/logos/liquipedia_logo_v2PC.png" alt="Liquidpedia" class="liquidpedia" ></a>
         <nav class="nav-principale">
+          <!-- liste pour le nav -->
           <ul>
+            <!-- Premiere categorie -->
             <li>Joueurs/Équipes <span class="material-symbols-outlined" id="fleche">
               expand_more
               </span>
               <ul>
+                <!-- page de joueurs et équipes -->
                 <li><a href="pages/equipes.html">Les meilleures équipes</a></li>
                 <li><a href="pages/joueurs.html">Les meilleures joueurs</a></li>
               </ul>
             </li>
+            <!-- Deuxieme categorie -->
             <li>Matchs et tournois<span class="material-symbols-outlined" id="fleche">
               expand_more
               </span>
               <ul>
+                <!-- page de matchs et tournois -->
                 <li><a href="#">En direct</a></li>
                 <li><a href="#">Résultats</a></li>
               </ul>
             </li>
+            <!-- Troisieme categorie -->
             <li><a href="#">Statistiques</a></li>
+            <!-- Quatrieme categorie -->
             <li>Devenir meilleur<span class="material-symbols-outlined" id="fleche">
               expand_more
               </span>
               <ul>
+                <!-- pages de conseils -->
                 <li><a href="#">Tout sur le jeu</a></li>
                 <li><a href="#">Tout sur les pros</a></li>
               </ul>
@@ -51,11 +67,15 @@
       </div>
     </header>
     <main>
+      <!-- logo CS2 -->
       <img src="medias/logos/Counter-Strike_2-logo.png" alt="CS2" class="imageTitre">
+      <!-- Premiere balise div avec tout le contenu des match a venir -->
       <div class="contentScroll">
+        <!-- fleche pour bouger le menu en avant-->
         <span class="material-symbols-outlined" id="flecheAvant">
           arrow_back
           </span>
+          <!-- section avec tout les equipes et match futures -->
         <section class="conteneurMatchs">
             <div class="matchsFutures">
               <h4>Decembre 11</h4>
@@ -154,18 +174,23 @@
             <h4>16hr</h4>
             </div>
           </section>
+          <!-- fleche pour bouger le menu en arriere-->
           <span class="material-symbols-outlined" id="flecheFront">
             arrow_forward
             </span>
       </div>
+      <!-- tableau de tout le tournoi plus important du moment -->
       <section class="tableauTournoi">
+        <!-- titre principal -->
         <div class="titreTournoi">
           <h3>BLAST.TV PARIS MAJOR 2023</h3>
         </div>
+        <!-- boutons pour changer la phase du tournoi -->
         <div class="boutonsTournoi">
           <button>Phase de groupe</button>
           <button>Éliminatoires</button>
         </div>
+        <!-- conteneur de tout les equipes et ses match respectives -->
         <div class="equipesTournoi">
           <div class="phaseGroupes">
             <div class="round">
@@ -326,15 +351,19 @@
         
       </section>
       <div class="divMatchsNouvelles">
+        <!-- section avec tout les matchs regionaux et International -->
         <section class="matchRegionaux">
+          <!-- titre du tableau -->
           <div class="titreMatch">
             <h3>Tous les tournois</h3>
+            <!-- boutons pour changer la region des matchs -->
             <div class="boutonsMatch">
               <button>Americas</button>
               <button>EMEA</button>
               <button>Asia</button>
               <button>International</button>
             </div>
+            <!-- conteneur de tout les matchs -->
             <div class="matchsGeneral">
               <div class="titresInterieurs">
                 <h3>À venir</h3>
@@ -369,9 +398,12 @@
             </div>
           </div>
         </section>
+        <!-- section avec tout les nouvelles -->
         <section class="nouvelles">
+          <!-- titre du tableau -->
           <div class="titreNouvelles">
             <h3>Nouvelles</h3>
+            <!-- article 1 --> 
             <div class="article">
               <img src="medias/articles/Article1.jpg" alt="article1">
               <div class="texteArticle">
@@ -379,6 +411,7 @@
                 <p>Article</p>
               </div>
             </div>
+            <!-- article 2 -->
             <div class="article">
               <img src="medias/articles/Article2.jpg" alt="article2">
               <div class="texteArticle">
@@ -386,6 +419,7 @@
                 <p>Article</p>
               </div>
             </div>
+            <!-- article 3 -->
             <div class="article">
               <img src="medias/articles/Article3.jpg" alt="article3">
               <div class="texteArticle">
@@ -396,9 +430,12 @@
         </section>
       </div>
     </main>
+    <!-- footer  de la page-->
     <footer class="footerPrincipal">
       <div class="iconesFooter">
+        <!-- logo du site Liquidpedia -->
         <a href="index.html"><img src="medias/logos/liquipedia_logo_v2.png" alt="Liquidpedia" class="liquidpediaFooter" ></a>
+        <!-- icones des reseaux sociaux -->
         <div id="reseauxSociauxHaut">
           <img src="medias/reseauxSociaux/discord.svg" alt="Discord">
           <img src="medias/reseauxSociaux/x-twitter.svg" alt="twitter">
@@ -412,6 +449,7 @@
           <img src="medias/reseauxSociaux/linkedin.svg" alt="linkedin">
         </div>
       </div>
+      <!-- texte important dans le footer -->
       <div class="texteFooter">
         <h3>Contactez-Nous</h3>
         <p>Chat avec nous</p>

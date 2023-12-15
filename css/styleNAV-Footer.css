@@ -1,5 +1,7 @@
+/* font principal du site */
 @font-face { font-family: Designer; src: url('../font/DESIGNER.otf'); } 
 
+/* couleurs principaux du site */
 :root{
   --colorOrange: #E18517;
   --colorBlanc: #e5e5e7;
@@ -9,10 +11,12 @@
   --colorOrangeFonce: #af5f00
 }
 
+/* styles pour le html */
   html{
     overflow-x: hidden;
   }
 
+/* styles pour le header */
   header{
     background-color: var(--colorBleu);
     width: 100vw;
@@ -26,22 +30,26 @@
     cursor: pointer;
   }
   
+  /* Icones pour le menu de navigation */
   #icone-burguer, #icone-fermer{
     font-size: 48px;
     color: var(--colorBlanc);
     margin-left: 15%;
   }
   
+  /* L'icone fermer va etre toujour cache */
   #icone-fermer{
     display: none;  
   }
   
+  /* Logo pour le menu de navigation */
   .liquidpedia{
     width: 20%;
     height: auto;
     margin-left: 30%;
   }
   
+  /* Menu de navigation */
   .nav-principale{
     position: fixed;
     width: 100vw;
@@ -65,6 +73,7 @@
     color: var(--colorBlanc);
   }
   
+  /* On met la barre nav relative pour suivre le header tout le temps, on met le z-index a 1 pour qu'il soit au dessus de la nav principale */
   .barre-nav{
     position: relative;
     z-index: 1;
@@ -74,6 +83,7 @@
     align-items: center;
   }
   
+  /* styles pour les listes sur le menu de navigation */
   nav ul{
     list-style: none;
     display: flex;
@@ -94,12 +104,14 @@
     background-color: var(--colorOrange);
   }
   
+  /* Le fleche a cote de notre liste pour montrer qu'il y a une sous liste */
   #fleche{
     font-size: 2rem;
     transform: rotate(90deg);
     transition: transform 0.2s ease-in-out;
   }
   
+  /* Styles de les sous listes */
   nav li ul li{
     padding: 1.2rem 0 1.2rem 0;
     border-bottom: 0.2rem solid var(--colorBlanc);
@@ -116,6 +128,7 @@
     transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out;
   }
   
+  /* Si on hover on change la couleur de la liste et on montre la sous liste */
   nav li:hover{
     background-color: var(--colorOrangeFonce);
   } 
@@ -125,10 +138,12 @@
     opacity: 1;
   }
   
+  /* Si on hover sur la liste on change la rotation de la fleche */
   nav li:hover > #fleche{
     transform: rotate(0deg);
   }
   
+  /* Si on hover sur la sous liste on change la couleur*/
   nav li > ul > li:hover{
     background-color: var(--colorOrange);
   }
@@ -142,6 +157,7 @@
     transform: translateY(0%);
   }
   
+  /*Si on ouvre la nav principale on cache le logo et on montre l'icone fermer */
   #cc-nav:checked ~ .barre-nav > .btn-burguer-nav > #icone-burguer{
     display: none;
   }
@@ -150,6 +166,7 @@
     display: block;
   }
 
+/* styles pour le footer */
   .footerPrincipal{
     display: flex;
     flex-direction: column;
@@ -159,12 +176,14 @@
     margin-top: 10%;
   } 
 
+  /*Styles pour les icones du footer */
   .iconesFooter{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  /*Logo du liquidpedia */
   .liquidpediaFooter{
     width: 25%;
     height: auto;
@@ -172,6 +191,7 @@
     margin: 1rem;
   }
 
+  /*styles pour le texte dans le footer */
   .footerPrincipal > .texteFooter > h3{
     color: var(--colorOrange);
     margin: 0.25rem;
@@ -198,10 +218,11 @@
     align-items: center;
   }
   
-
-
+/*STYLES DU NAV SUR PC*/
 @media screen and (min-width: 1024px){
 
+  /*Sa me tentait pas de expliquer tout mais, bref, on met le barre nav en fixed pour suivre le scroll et
+  on met la barre nav a droite */
   .barre-nav{
     position: fixed;
     top: 0;
@@ -220,6 +241,7 @@
     margin-left: 18%;
   }
 
+  /* Comme la barre nav etait cache on enleve tout les transitions et les transform pour regarde le menu de navigation */
   .nav-principale{
     transform: translateY(0%);
     transition: none;
@@ -229,6 +251,8 @@
     background-color: transparent;
     font-size: 1.3rem;
   }
+
+ /*APPARTIR D'ICI SON DES CHANGEMENTS DE POSITION ET DE TAILLE DES ELEMENTS DU NAV ET DU FOOTER*/
 
   nav ul{
     width: 100%;

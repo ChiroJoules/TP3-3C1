@@ -1,5 +1,7 @@
+/* font principal du site */
 @font-face { font-family: Designer; src: url('../font/DESIGNER.otf'); } 
 
+/* couleurs principaux du site */
 :root{
   --colorOrange: #E18517;
   --colorBlanc: #e5e5e7;
@@ -9,6 +11,7 @@
   --colorOrangeFonce: #af5f00
 }
 
+/* styles pour le html */
 html{
   width: 100vw;
   height: 100vh;
@@ -16,6 +19,7 @@ html{
   scroll-behavior: smooth;
 }
 
+/* styles pour le body */
 body{
   background-color: var(--colorNoir);
   max-width: 100%;
@@ -25,28 +29,33 @@ body{
   overflow-x: hidden;
 }
 
+/* On enleve le style bold des toutes les titres */
 h1, h2, h3, h4, h5, h6{
   font-weight: normal;
 }
 
+/* styles pour le main */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Styles pour l'image du CS2 */
 .imageTitre{
     width: 75%;
     height: auto;
     margin: 15% 0 5% 0;
 }
 
+/* Styles pour le tableau de TOUS les joueurs */
 .tableJoueurs{
     display: flex;
     justify-content: center;
     overflow-x: auto;
 }
 
+/* Styles pour le tableau et les division du tableau */
 table {
     border-collapse: collapse;
     width: 90%;
@@ -67,7 +76,7 @@ th {
     background-color: var(--colorOrange);
 }
 
-
+/* Styles pour les joueurs comme son image et un partie du texte*/
 .joueurInfo > img{
     width: 6rem;
 }
@@ -86,6 +95,15 @@ th {
     margin: 2%;
 }
 
+/* STYLE POUR LA PAGE DANS PC */
+/*Je sait que tu lis tout les commentaires David, je n'aime pas faire des jokes dans un travaux mais vraiment,
+pour expliquer tout les styles ici c'est trop long juste pour dire que j'ai change le width et modifier le padding,
+flex, etc. 
+
+Sorry, :c
+
+-- Julian
+*/
 @media screen and (min-width: 1024px){
 
     main{

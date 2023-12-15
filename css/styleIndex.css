@@ -1,5 +1,7 @@
+/* font principal du site */
 @font-face { font-family: Designer; src: url('../font/DESIGNER.otf'); } 
 
+/* couleurs principaux du site */
 :root{
   --colorOrange: #E18517;
   --colorBlanc: #e5e5e7;
@@ -9,6 +11,7 @@
   --colorOrangeFonce: #af5f00
 }
 
+/* styles pour le html */
 html{
   width: 100vw;
   height: 100vh;
@@ -16,6 +19,7 @@ html{
   scroll-behavior: smooth;
 }
 
+/* styles pour le body */
 body{
   background-color: var(--colorNoir);
   max-width: 100%;
@@ -24,6 +28,7 @@ body{
   font-family: Designer;
 }
   
+  /* styles pour le main et le contenu dans main comme les sections */
   main{
     display: flex;
     flex-direction: column;
@@ -35,6 +40,7 @@ body{
     margin-top: 20%;
   }
 
+  /* style pour le premier section/div appele content scroll */
   .contentScroll{
     display: flex;
     align-items: center;
@@ -42,27 +48,32 @@ body{
     width: 100vw;
   }
 
+  /* on met les fleches dans une bonne taille pour le site */
   #flecheAvant, #flecheFront{
     padding: 1.5%;
     font-size: 2.5rem;
     cursor: pointer;
   }
 
+  /* on met l'image de cs2d dans une bonne taille pour le site */
   .imageTitre{
     width: 75%;
     height: auto;
     margin-top: 15%;
   }
 
+  /* pour le conteneur match on veux que son contenu soit scrollable */
   .conteneurMatchs{
     display: flex;
     overflow-x: scroll;
   }
 
+  /* on veux que le scroll soit invisible */
   .conteneurMatchs::-webkit-scrollbar{
     display: none;
   }
 
+  /* toute les styles pour le div de match futures */
   .matchsFutures{
     background-color: var(--colorBleu);
     display: flex;
@@ -74,6 +85,7 @@ body{
     font-size: 1.1rem;
   }
   
+  /* on modifie le style des div dedans matchfutures pour qu'ils soient bien aligner */
   .matchsFutures > div{
     display: flex;
     justify-content: space-evenly;
@@ -82,26 +94,27 @@ body{
     margin: 0.2rem;
   }
   
+  /* on met tout les h4 dans match futures en orange */
   .matchsFutures > h4{
     color: var(--colorOrange);
+    font-weight: normal;
+    font-size: 1.2rem;
   }
 
+  /* on met les images dans match futures en une bonne taille */
   .matchsFutures > div > img{
     width: 2.5rem;
     height: 2.5rem;
   }
 
-  .matchsFutures > h4{
-    font-weight: normal;
-    font-size: 1.2rem;
-  }
-
+  /* On met le tableau torunoi (deuxieme section) en display flex */
   .tableauTournoi{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  /* On met en flex le titre et les boutons */
   .titreTournoi, .boutonsTournoi{
     display: flex;
     justify-content: center;
@@ -110,19 +123,23 @@ body{
     padding: 2%;
   }
 
+  /* on change la couleur du background et on mettre un margin */
   .titreTournoi{
     margin-top: 10%;
     background-color: var(--colorOrange);
   }
 
+  /* on met le h3 avec un padding */
   .titreTournoi > h3{
     padding: 0.5rem;
   }
 
+  /* on change la couleur du background */
   .boutonsTournoi{
     background-color: var(--colorOrangeFonce);
   }
 
+  /* on met les boutons en flex et on change la couleur du background, le font et la taille */
   .boutonsTournoi > button{
     font-family: Designer;
     width: 45%;
@@ -132,6 +149,7 @@ body{
     border: 0.3rem solid var(--colorBlanc);
   }
 
+  /* Pour savoir quelle bouton est "active" on change la couleur du background */
   .boutonsTournoi > button:first-child{
     background-color: var(--colorOrange);
   }
@@ -141,6 +159,7 @@ body{
     background-color: var(--colorOrangeFonce);
   }
 
+  /* on met le tableau en display flex  et on change le couleur du background*/
   .equipesTournoi{
     display: flex;
     flex-direction: column;
@@ -150,6 +169,7 @@ body{
     z-index: -2;
   }
 
+  /* On organize tout les tableau de match pour donner un style uniforme dans toute cette section */
   .phaseGroupes{
     display: flex;
     justify-content: center;
@@ -210,6 +230,7 @@ body{
     z-index: -1;
   }
 
+  /* pour les nouvelles on met son width et on le met en flex */
   .divMatchsNouvelles{
     display: flex;
     flex-direction: column;
@@ -218,10 +239,12 @@ body{
     margin-top: 20%;
   }
 
+  /* On modifie le font size dans la section des nouvelles */
   .divMatchsNouvelles > section{
     font-size: 1rem;
   }
 
+  /* on met le titre et le div des boutons en flex et on change la couleur du background */
   .titreMatch{
     background-color: var(--colorOrange);
     display: flex;
@@ -239,6 +262,7 @@ body{
     padding: 2%;
   }
 
+  /* on met les boutons en flex et on change la couleur du background */
   .boutonsMatch > button{
     font-family: Designer;
     font-size: 1rem;
@@ -251,10 +275,33 @@ body{
     
   }
 
+  /* Meme concept, on change la ccouleur d'un bouton pour le donner un effet "active" */
   .boutonsMatch > button:last-of-type{
     background-color: var(--colorOrange);
   }
 
+  /* Pour chaque article on met un width et on le met en flex */
+  .article{
+    width: 100%;
+    background-color: var(--colorBleu);
+    display: flex;
+    align-items: center;
+    border-bottom: var(--colorOrange) 0.4rem solid;
+  }
+
+  /* On met l'image dans un bon taille avec un padding */
+  .article > img{
+    width: 45%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  /* On juste change la couleur du texte */
+  .article > .texteArticle > p:last-of-type{
+    color: var(--colorOrange);
+  }
+
+/*   Meme concept dans le reste du code, on met les div en flex et on change le couleur du background ou on ajoute du padding/margin */
   .matchsGeneral{
     background-color: var(--colorBleu);
     display: flex;
@@ -300,21 +347,5 @@ body{
     width: 100%;
   }
 
-  .article{
-    width: 100%;
-    background-color: var(--colorBleu);
-    display: flex;
-    align-items: center;
-    border-bottom: var(--colorOrange) 0.4rem solid;
-  }
 
-  .article > img{
-    width: 45%;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .article > .texteArticle > p:last-of-type{
-    color: var(--colorOrange);
-  }
 
